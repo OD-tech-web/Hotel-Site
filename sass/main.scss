@@ -1,0 +1,107 @@
+@import './variables';
+@import './reset';
+@import './config';
+
+body {
+    background-color: $neutral-color;
+}
+
+.wid {
+    width: 100%;
+}
+
+.btn {
+    background-color: $contrast-color;
+    color: $neutral-color;
+    padding: 10px 20px;
+    border-radius: 21px;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+
+.main-rule {
+    background-color: $contrast-color;
+    height: 2px;
+}
+
+.empty-element {
+    height: .1rem;
+}
+
+.mg-t {
+    margin-top: 1rem;
+}
+
+.mg-t_md {
+    margin-top: 2rem;
+}
+
+.mg-t_lg {
+    margin-top: 3rem;
+}
+
+.mg-b {
+    margin-bottom: 1rem;
+}
+
+.mg-b_md {
+    margin-bottom: 2rem;
+}
+
+.mg-b_lg {
+    margin-bottom: 3rem;
+}
+
+.txt-ctr {
+    text-align: center;
+}
+
+.pad {
+    padding: 0rem 1rem;
+}
+
+.pad2 {
+    padding: 0rem 2rem;
+}
+
+.f-wg {
+    font-weight: bold;
+}
+
+.f-wg_btn {
+    font-weight: 700;
+}
+
+.nav .active {
+    color: $contrast-color;
+}
+
+.nav a:hover {
+    color: $contrast-color;
+}
+
+@keyframes button {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+@import './semantics/header';
+@import './semantics/sidebar';
+@import './pages/home';
+@import './pages/about';
+@import './pages/rooms';
+@import './pages/services';
+@import './pages/gastronomy';
+@import './pages/contact';
+@import './semantics/footer';
+@import './responsive';

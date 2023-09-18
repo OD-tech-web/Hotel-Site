@@ -1,0 +1,865 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header, header .menu-btn, .overlay .sidebar div .menu-icon, .main-content .main-header, .about-header, .room-header, .services-header, .gastro-header, .contact-header {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: #ffeaee;
+}
+
+.wid {
+  width: 100%;
+}
+
+.btn {
+  background-color: #ff9900;
+  color: #ffeaee;
+  padding: 10px 20px;
+  border-radius: 21px;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+
+.main-rule {
+  background-color: #ff9900;
+  height: 2px;
+}
+
+.empty-element {
+  height: .1rem;
+}
+
+.mg-t {
+  margin-top: 1rem;
+}
+
+.mg-t_md {
+  margin-top: 2rem;
+}
+
+.mg-t_lg {
+  margin-top: 3rem;
+}
+
+.mg-b {
+  margin-bottom: 1rem;
+}
+
+.mg-b_md {
+  margin-bottom: 2rem;
+}
+
+.mg-b_lg {
+  margin-bottom: 3rem;
+}
+
+.txt-ctr {
+  text-align: center;
+}
+
+.pad {
+  padding: 0rem 1rem;
+}
+
+.pad2 {
+  padding: 0rem 2rem;
+}
+
+.f-wg {
+  font-weight: bold;
+}
+
+.f-wg_btn {
+  font-weight: 700;
+}
+
+.nav .active {
+  color: #ff9900;
+}
+
+.nav a:hover {
+  color: #ff9900;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+header {
+  justify-content: space-between;
+  padding: 3% 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3e000c;
+  border-bottom: 0.1rem solid #ffeaee;
+  z-index: 10;
+}
+
+header .logo div {
+  background-color: #ffeaee;
+  padding: .1rem .2rem;
+  border-radius: .2rem;
+  color: #3e000c;
+  display: inline-block;
+}
+
+header .logo p {
+  display: inline-block;
+  color: #ffeaee;
+  font-style: italic;
+}
+
+header .menu-btn {
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: transform .2s ease;
+}
+
+header .menu-btn_burger {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffeaee;
+}
+
+header .open {
+  transform: rotate(90deg);
+}
+
+header .navbar {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -150%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  transition: left .2s ease-in-out;
+}
+
+.overlay .sidebar {
+  width: 75vw;
+  height: 100vh;
+  background-color: #3e000c;
+  z-index: 15;
+  padding: .5rem .7rem;
+  color: #ffeaee;
+  font-family: sans-serif;
+}
+
+.overlay .sidebar div .menu-icon {
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  border-radius: 50%;
+  transform: rotate(90deg) translate(1rem, -0.5rem);
+  width: fit-content;
+  height: fit-content;
+}
+
+.overlay .sidebar div .menu-icon_burger {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffeaee;
+}
+
+.overlay .sidebar nav {
+  margin-top: 3rem;
+}
+
+.overlay .sidebar nav a {
+  display: block;
+  color: #ffeaee;
+  margin: 1.5rem auto;
+  font-size: .8rem;
+}
+
+.overlay .sidebar .nav .active {
+  color: #ff9900;
+}
+
+.overlay .sidebar .nav a:hover {
+  color: #ff9900;
+}
+
+.overlay .sidebar .sidebar_btn {
+  margin: 1rem 0rem;
+  font-size: .6rem;
+  font-weight: 700;
+  display: grid;
+  place-content: center;
+}
+
+.overlay .sidebar .sidebar_btn .sidebar_button {
+  background-color: #ffeaee;
+  color: #3e000c;
+  transform: scale(1, 1);
+  animation-name: button;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.show {
+  left: 0;
+}
+
+.main-content .main-header {
+  height: 100vh;
+  width: 100% !important;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../image/Hotel/img5.jpeg);
+  background-size: 100% 100%;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffeaee;
+  text-align: left;
+}
+
+.main-content .main-header_p {
+  text-align: left;
+}
+
+.main-content .main-header_btn {
+  font-size: .6rem;
+}
+
+.main-content .main-header_btn .main-header_button {
+  background: #ffeaee;
+  color: black;
+}
+
+.main-content .main-container1 {
+  padding: 2rem 1rem;
+}
+
+.main-content .main-container2_img {
+  height: 15rem;
+  background-image: url(../image/img2.jpeg);
+  background-size: cover;
+}
+
+.main-content .main-container3_btn {
+  margin: 1rem 0rem;
+  font-size: .6rem;
+  display: grid;
+  place-content: center;
+  transform: scale(1, 1);
+  animation-name: button;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.main-content .main-container4_box {
+  height: 13rem;
+  border-radius: .3rem;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img11.jpeg);
+  background-size: 100% 100%;
+  padding: 10.5rem 1rem 0rem;
+  color: #ffeaee;
+  margin-top: 1.5rem;
+}
+
+.main-content .main-container4 .container4_box2 {
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img8.jpeg);
+  background-size: 100% 100%;
+  margin-top: .3rem;
+}
+
+.main-content .main-container4 .container4_box3 {
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img7.jpeg);
+  background-size: 100% 100%;
+  margin-top: .3rem;
+}
+
+.main-content .main-container4 .container4_box4 {
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img12.jpeg);
+  background-size: 100% 100%;
+  margin-top: .3rem;
+}
+
+.main-content .main-container4 .container4_box5 {
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img18.jpg);
+  background-size: 100% 100%;
+  margin-top: .3rem;
+}
+
+.main-content .main-container4 .container4_box6 {
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img13.jpeg);
+  background-size: 100% 100%;
+  margin-top: .3rem;
+}
+
+.main-content .main-container5_box {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: .3rem;
+}
+
+.main-content .main-container5_box .main-container5_img {
+  background-image: url(../image/img4.jpeg);
+  background-size: 100% 100%;
+  height: 10rem;
+}
+
+.main-content .main-container5_box .container5_img2 {
+  background-image: url(../image/img5.jpeg);
+}
+
+.main-content .main-container5_box .container5_img3 {
+  background-image: url(../image/img6.jpeg);
+}
+
+.main-content .main-container5_box .main-container5_btn {
+  margin-top: 1.5rem;
+  font-size: .6rem;
+  display: grid;
+  place-content: center;
+  transform: scale(1, 1);
+  animation-name: button;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.main-content .main-container6_content {
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border-top: 0.2rem solid #ff9900;
+  background-color: #fff;
+}
+
+.main-content .main-container6_content .main-container6_btn {
+  font-size: .6rem;
+  display: grid;
+  place-content: center;
+  transform: scale(1, 1);
+  animation-name: button;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.about-header {
+  height: 80vh;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../image/img3.jpeg);
+  background-size: cover;
+  justify-content: center;
+  color: #ffeaee;
+}
+
+.about-container {
+  padding: 5rem 2rem 0rem;
+}
+
+.about-container .about-container_box {
+  background-color: #fff;
+  border-radius: .4rem;
+  border: 0.2rem solid #ff9900;
+  padding: 2rem 1rem;
+}
+
+.about-container .about-container_box .about-rule {
+  padding: 0rem 5.5rem;
+}
+
+.room-header {
+  height: 80vh;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../image/Hotel/img7.jpeg);
+  background-size: cover;
+  justify-content: center;
+  color: #ffeaee;
+}
+
+.room-wrapper_content {
+  background-color: #fff;
+  border-radius: .2rem;
+  padding: 3rem 1rem;
+}
+
+.room-wrapper .room-header_btn {
+  font-size: .6rem;
+}
+
+.room-wrapper .room-header_btn .room-btn {
+  background: #ff9900;
+  padding: 10px 20px;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.room-img {
+  height: 20rem;
+  background-image: url(../image/img7.jpeg);
+  background-size: cover;
+}
+
+.room-container_box {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: .3rem;
+}
+
+.room-container_box .room-container_img {
+  background-image: url(../image/Bedroom/img14.jpeg);
+  background-size: cover;
+  height: 10rem;
+}
+
+.room-container_box .room-container_img2 {
+  background-image: url(../image/Bedroom/img12.jpeg);
+}
+
+.room-container_box .room-container_img3 {
+  background-image: url(../image/Bedroom/img1.jpg);
+}
+
+.room-container_box .room-container_img4 {
+  background-image: url(../image/Bedroom/img16.jpeg);
+}
+
+.services-header {
+  height: 80vh;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../image/img3.jpeg);
+  background-size: cover;
+  justify-content: center;
+  color: #ffeaee;
+}
+
+.services-wrapper_content {
+  background-color: #fff;
+  border-radius: .2rem;
+  padding: 3rem 1rem;
+}
+
+.services-wrapper_btn {
+  background-color: #ff9900;
+  text-align: center;
+  padding: .5rem 0rem;
+  border-radius: .2rem;
+}
+
+.services_image {
+  background-image: url(../image/img2.jpeg);
+  height: 20rem;
+  background-size: cover;
+}
+
+.services-container {
+  padding: 3rem 2rem 0rem;
+}
+
+.services-container .services-container_box {
+  background-color: #fff;
+  border-radius: .3rem;
+  border: 0.2rem solid #ff9900;
+  padding: 2rem 1rem;
+}
+
+.services-container .services-container_box .service-rule {
+  padding: 0rem 5.5rem;
+}
+
+.gastro-header {
+  height: 80vh;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../image/Hotel/img7.jpeg);
+  background-size: cover;
+  justify-content: center;
+  color: #ffeaee;
+}
+
+.gastro-wrapper_content {
+  background-color: #fff;
+  border-radius: .2rem;
+  padding: 3rem 1rem;
+}
+
+.gastro-wrapper .gastro-wrapper_btn {
+  background-color: #ff9900;
+  padding: .5rem 0rem;
+  border-radius: .2rem;
+}
+
+.gastro-img .gastro-image {
+  height: 12rem;
+  margin-top: .5rem;
+  background-size: 100% 100%;
+}
+
+.gastro-img1 {
+  background-image: url(../image/img3.jpeg);
+}
+
+.gastro-img2 {
+  background-image: url(../image/img1.jpeg);
+}
+
+.gastro-img3 {
+  background-image: url(../image/img5.jpeg);
+}
+
+.gastro-img4 {
+  background-image: url(../image/Hotel/img2.jpeg);
+}
+
+.gastro-img5 {
+  background-image: url(../image/img4.jpeg);
+}
+
+.gastro-img6 {
+  background-image: url(../image/img2.jpeg);
+}
+
+.gastro-container {
+  padding: 5rem 2rem 0rem;
+}
+
+.gastro-container .gastro-container_box {
+  background-color: #fff;
+  border-radius: .3rem;
+  border: 0.2rem solid #ff9900;
+  padding: 2rem 1rem;
+}
+
+.gastro-container .gastro-container_box .gastro-rule {
+  padding: 0rem 5.5rem;
+}
+
+.contact-header {
+  height: 80vh;
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../image/Hotel/img5.jpeg);
+  background-size: cover;
+  justify-content: center;
+  color: #ffeaee;
+}
+
+.contact-form .contact-form_item1 {
+  margin-top: .2rem;
+}
+
+.contact-form_item {
+  margin-top: .4rem;
+}
+
+.contact-form_item #firstName,
+.contact-form_item #lastName,
+.contact-form_item #phone,
+.contact-form_item #email,
+.contact-form_item #message {
+  width: 100%;
+  padding: .5rem .8rem;
+  outline: none;
+  border: .1rem solid gray;
+}
+
+.contact-form_item #message {
+  resize: none;
+}
+
+.contact-form .contact-btn {
+  margin: 1.5rem 0rem 2rem;
+}
+
+.contact-form .contact-btn_item {
+  background-color: #ff9900;
+  width: fit-content;
+  height: fit-content;
+  padding: .8rem 1rem;
+  color: #fff;
+}
+
+.contact-container_content {
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border-top: 0.2rem solid #ff9900;
+  background-color: #fff;
+}
+
+.footer-mg_t {
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: #3e000c;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  color: #fff;
+  padding: 3rem 2rem 0rem;
+  text-align: center;
+}
+
+.footer-container .footer-box {
+  margin-top: 2rem;
+}
+
+.footer .footer-box5 {
+  margin-top: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem .5rem;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  header .logo {
+    margin-left: 1rem;
+  }
+  header .menu-btn {
+    display: none !important;
+  }
+  header .navbar {
+    display: inline-block !important;
+    margin-right: 1rem;
+  }
+  header .navbar a {
+    margin: auto .5rem;
+    color: #ffeaee;
+  }
+  .overlay {
+    display: none;
+  }
+  .main-container01 {
+    height: 30rem;
+    background: linear-gradient(to left, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.8)), url(../image/Hotel/img8.jpeg);
+    background-size: cover;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5rem;
+  }
+  .main-container01 .main-container2_img {
+    display: none;
+  }
+  .main-container01 .main-container001 {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 16rem;
+    height: 18rem;
+    border-radius: .5rem;
+    border-top: 0.2rem solid #ff9900;
+  }
+  .main-container01 .main-container001 .main-container3_btn {
+    margin-top: -.5rem;
+  }
+  .main-container04,
+  .main-container05 {
+    width: fit-content;
+    text-align: center;
+    margin: 0rem auto;
+  }
+  .main-container004 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .2rem;
+    height: 30rem;
+    padding: .5rem;
+  }
+  .main-container004 .container4_box1 {
+    margin-top: .3rem !important;
+  }
+  .main-container05_p,
+  .contact-form_p {
+    text-align: center;
+  }
+  .main-container005,
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .4rem;
+  }
+  .main-container6,
+  .gastro-wrapper {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.8)), url(../image/img9.jpeg);
+    background-size: cover;
+    height: 25rem;
+    padding-left: 5rem;
+  }
+  .main-container6_content,
+  .gastro-wrapper_content {
+    width: 16rem;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+  }
+  .main-container6 {
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.8)), url(../image/img1.jpeg);
+    background-size: cover;
+  }
+  .about-header,
+  .room-header,
+  .services-header,
+  .gastro-header,
+  .contact-header {
+    height: 50vh;
+  }
+  .room-wrapper_content {
+    height: 20rem !important;
+  }
+  .room-img {
+    display: none;
+  }
+  .room-container0 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .services-wrapper01 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .services-wrapper01 .services-wrapper_content {
+    height: 22rem;
+  }
+  .services-wrapper01 .services-img {
+    display: none;
+  }
+  .services_image {
+    background-position: center center;
+  }
+  .services-container01,
+  .gastro-container0 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+  .gastro-wrapper {
+    height: 35rem !important;
+    justify-content: flex-start;
+  }
+  .gastro-wrapper_content {
+    width: 15rem !important;
+    height: 25rem;
+  }
+  .gastro-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+  }
+  .contact-form01 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contact-container,
+  .room-wrapper {
+    background: linear-gradient(to left, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.8)), url(../image/Hotel/img5.jpeg);
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5rem;
+  }
+  .contact-container_content,
+  .room-wrapper_content {
+    width: 15rem;
+    height: 18rem;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .room-wrapper {
+    background: linear-gradient(to left, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.8)), url(../image/Bedroom/img4.jpeg);
+    background-size: cover;
+  }
+  .contact-container_content {
+    height: 15rem;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    padding: 0rem 4rem;
+  }
+  .footer-container .footer-box {
+    margin: 2rem auto;
+    width: 15rem;
+    height: 10.5rem;
+  }
+  .footer-box5 {
+    padding-right: 6rem !important;
+    text-align: right !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 3rem;
+  }
+  .navbar {
+    margin-right: 3rem;
+  }
+  .main-container004,
+  .main-container005 {
+    column-gap: 2rem;
+  }
+  .about-container {
+    column-gap: 5rem;
+  }
+  .room-container0 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .room-container0 .room-container_box {
+    height: fit-content;
+  }
+  .services-wrapper01 {
+    padding: 0rem 3rem;
+    column-gap: 5rem;
+  }
+  .services-wrapper01 .services-wrapper_content {
+    height: 20rem;
+  }
+  .services-container01,
+  .gastro-container0 {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+  }
+  .contact-form001 {
+    width: 22rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0rem .5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .logo {
+    margin-left: 5rem;
+  }
+  .navbar {
+    margin-right: 5rem;
+  }
+}

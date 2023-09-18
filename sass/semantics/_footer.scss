@@ -1,0 +1,27 @@
+.footer-mg_t {
+    margin-top: 1rem;
+}
+
+.footer {
+    background-color: $primary-color;
+    margin-top: 3rem;
+
+    &-container {
+        color: $white-color;
+        padding: 3rem 2rem 0rem;
+        text-align: center;
+    
+        .footer-box {
+            margin-top: 2rem;
+        }
+    
+    }
+
+    .footer-box5 {
+        margin-top: 1.5rem;
+        background-color: rgba(255,255,255,0.1);
+        padding: 1rem .5rem;
+        color: $white-color;
+        text-align: center;
+    }
+}

@@ -1,0 +1,48 @@
+.services-header {
+    height: 80vh;
+    background: linear-gradient(to bottom,
+            rgba($dark-color, 0.9),
+            rgba($dark-color, 0.3)),
+        url(../image/img3.jpeg);
+    background-size: cover;
+    @extend %d-flex;
+    justify-content: center;
+    color: $neutral-color;
+}
+
+.services-wrapper {
+
+    &_content {
+        background-color: $white-color;
+        border-radius: .2rem;
+        padding: 3rem 1rem;
+    }
+
+    &_btn {
+        background-color: $contrast-color;
+        text-align: center;
+        padding: .5rem 0rem;
+        border-radius: .2rem;
+    }
+}
+
+.services_image {
+    background-image: url(../image/img2.jpeg);
+    height: 20rem;
+    background-size: cover;
+}
+
+.services-container {
+    padding: 3rem 2rem 0rem;
+
+    .services-container_box {
+        background-color: $white-color;
+        border-radius: .3rem;
+        border: .2rem solid $contrast-color;
+        padding: 2rem 1rem;
+
+        .service-rule {
+            padding: 0rem 5.5rem;
+        }
+    }
+}

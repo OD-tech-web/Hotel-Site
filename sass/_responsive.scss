@@ -1,0 +1,302 @@
+@include media-md {
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .logo {
+            margin-left: 1rem;
+        }
+
+        .menu-btn {
+            display: none !important;
+        }
+
+        .navbar {
+            display: inline-block !important;
+            margin-right: 1rem;
+
+            a {
+                margin: auto .5rem;
+                color: $neutral-color;
+            }
+        }
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .main-container01 {
+        height: 30rem;
+        background: linear-gradient(to left,
+                rgba($dark-color, 0.3),
+                rgba($dark-color, 0.8)),
+            url(../image/Hotel/img8.jpeg);
+        background-size: cover;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 5rem;
+
+        .main-container2_img {
+            display: none;
+        }
+
+        .main-container001 {
+            background-color: rgba(255, 255, 255, 0.3);
+            width: 16rem;
+            height: 18rem;
+            border-radius: .5rem;
+            border-top: .2rem solid $contrast-color;
+
+
+            .main-container3_btn {
+                margin-top: -.5rem;
+            }
+        }
+    }
+
+    .main-container04,
+    .main-container05 {
+        width: fit-content;
+        text-align: center;
+        margin: 0rem auto;
+    }
+
+    .main-container004 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .2rem;
+        height: 30rem;
+        padding: .5rem;
+
+        .container4_box1 {
+            margin-top: .3rem !important;
+        }
+    }
+
+    .main-container05_p,
+    .contact-form_p {
+        text-align: center;
+    }
+
+    .main-container005,
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .4rem;
+    }
+
+    
+    .main-container6,
+    .gastro-wrapper {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to right,
+                rgba($dark-color, 0.3),
+                rgba($dark-color, 0.8)),
+            url(../image/img9.jpeg);
+        background-size: cover;
+        height: 25rem;
+        padding-left: 5rem;
+        
+        &_content {
+            width: 16rem;
+            background-color: rgba(255, 255, 255, 0.3) !important;
+        }
+    }
+    
+    .main-container6 {
+        background: linear-gradient(to right,
+                rgba($dark-color, 0.3),
+                rgba($dark-color, 0.8)),
+            url(../image/img1.jpeg);
+        background-size: cover;
+    }
+
+    .about-header,
+    .room-header,
+    .services-header,
+    .gastro-header,
+    .contact-header {
+        height: 50vh;
+    }
+
+    .room-wrapper_content {
+        height: 20rem !important;
+    }
+
+    .room-img {
+        display: none;
+    }
+
+    .room-container0 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .services-wrapper01 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .services-wrapper_content {
+            height: 22rem;
+        }
+
+        .services-img {
+            display: none;
+        }
+    }
+
+    .services_image {
+        background-position: center center;
+    }
+
+    .services-container01,
+    .gastro-container0 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+    }
+
+    .gastro-wrapper {
+        height: 35rem !important;
+        justify-content: flex-start;
+
+        &_content {
+            width: 15rem !important;
+            height: 25rem;
+        }
+    }
+
+    .gastro-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem 2rem;
+    }
+
+    .contact-form01 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .contact-container,
+    .room-wrapper {
+        background: linear-gradient(to left,
+                rgba($dark-color, 0.3),
+                rgba($dark-color, 0.8)),
+            url(../image/Hotel/img5.jpeg);
+        background-size: cover;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 5rem;
+
+        &_content {
+            width: 15rem;
+            height: 18rem;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .room-wrapper {
+        background: linear-gradient(to left,
+                rgba($dark-color, 0.3),
+                rgba($dark-color, 0.8)),
+            url(../image/Bedroom/img4.jpeg);
+        background-size: cover;
+    }
+
+    .contact-container_content {
+        height: 15rem;
+    }
+
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        padding: 0rem 4rem;
+
+        .footer-box {
+            margin: 2rem auto;
+            width: 15rem;
+            height: 10.5rem;
+        }
+    }
+
+    .footer-box5 {
+        padding-right: 6rem !important;
+        text-align: right !important;
+    }
+}
+
+@include media-lg {
+    .logo {
+        margin-left: 3rem;
+    }
+
+    .navbar {
+        margin-right: 3rem;
+    }
+
+    .main-container004,
+    .main-container005 {
+        column-gap: 2rem;
+    }
+
+    .about-container {
+        column-gap: 5rem;
+    }
+
+    .room-container0 {
+        grid-template-columns: repeat(4, 1fr);
+
+        .room-container_box {
+            height: fit-content;
+        }
+    }
+
+    .services-wrapper01 {
+        padding: 0rem 3rem;
+        column-gap: 5rem;
+
+        .services-wrapper_content {
+            height: 20rem;
+        }
+    }
+
+    .services-container01,
+    .gastro-container0 {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+    }
+
+    .contact-form001 {
+        width: 22rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0rem .5rem;
+    }
+}
+
+@include media-xl {
+    header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .logo {
+        margin-left: 5rem;
+    }
+
+    .navbar {
+        margin-right: 5rem;
+    }
+}

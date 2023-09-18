@@ -1,0 +1,65 @@
+.room-header {
+    height: 80vh;
+    background: linear-gradient(to bottom,
+            rgba($dark-color, 0.9),
+            rgba($dark-color, 0.3)),
+        url(../image/Hotel/img7.jpeg);
+    background-size: cover;
+    @extend %d-flex;
+    justify-content: center;
+    color: $neutral-color;
+}
+
+.room-wrapper {
+
+    &_content {
+        background-color: $white-color;
+        border-radius: .2rem;
+        padding: 3rem 1rem;
+    }
+
+    .room-header_btn {
+        font-size: .6rem;
+
+        .room-btn {
+            background: $contrast-color;
+            padding: 10px 20px;
+            color: $white-color;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}
+
+.room-img {
+    height: 20rem;
+    background-image: url(../image/img7.jpeg);
+    background-size: cover;
+}
+
+.room-container {
+
+    &_box {
+        background-color: $white-color;
+        padding: 1rem;
+        border-radius: .3rem;
+
+        .room-container_img {
+            background-image: url(../image/Bedroom/img14.jpeg);
+            background-size: cover;
+            height: 10rem;
+
+            &2 {
+                background-image: url(../image/Bedroom/img12.jpeg);
+            }
+
+            &3 {
+                background-image: url(../image/Bedroom/img1.jpg);
+            }
+
+            &4 {
+                background-image: url(../image/Bedroom/img16.jpeg);
+            }
+        }
+    }
+}

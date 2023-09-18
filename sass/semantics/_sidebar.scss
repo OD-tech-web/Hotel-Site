@@ -1,0 +1,82 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -150%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    transition: left .2s ease-in-out;
+
+    .sidebar {
+        width: 75vw;
+        height: 100vh;
+        background-color: $primary-color;
+        z-index: 15;
+        padding: .5rem .7rem;
+        color: $neutral-color;
+        font-family: sans-serif;
+
+        div {
+
+            .menu-icon {
+                cursor: pointer;
+                @extend %d-flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 3px;
+                border-radius: 50%;
+                transform: rotate(90deg) translate(1rem, -.5rem);
+                width: fit-content;
+                height: fit-content;
+
+                &_burger {
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: $neutral-color;
+                }
+            }
+        }
+
+        nav {
+            margin-top: 3rem;
+
+            a {
+                display: block;
+                color: $neutral-color;
+                margin: 1.5rem auto;
+                font-size: .8rem;
+            }
+        }
+
+        .nav .active {
+            color: $contrast-color;
+        }
+
+        .nav a:hover {
+            color: $contrast-color;
+        }
+
+        .sidebar_btn {
+            margin: 1rem 0rem;
+            font-size: .6rem;
+            font-weight: 700;
+            display: grid;
+            place-content: center;
+
+            .sidebar_button {
+                background-color: $neutral-color;
+                color: $primary-color;
+                transform: scale(1, 1);
+                animation-name: button;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+.show {
+    left: 0;
+}
