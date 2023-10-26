@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 
-header, header .menu-btn, .overlay .sidebar div .menu-icon, .main-content .main-header, .about-header, .room-header, .services-header, .gastro-header, .contact-header {
+.contact-header, .gastro-header, .services-header, .room-header, .about-header, .main-content .main-header, .overlay .sidebar div .menu-icon, header .menu-btn, header {
   display: flex;
   align-items: center;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .empty-element {
-  height: .1rem;
+  height: 0.1rem;
 }
 
 .mg-t {
@@ -100,32 +100,29 @@ body {
     transform: scale(1, 1);
   }
 }
-
 header {
   justify-content: space-between;
   padding: 3% 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  width: 100vw;
   background-color: #3e000c;
   border-bottom: 0.1rem solid #ffeaee;
   z-index: 10;
 }
-
 header .logo div {
   background-color: #ffeaee;
-  padding: .1rem .2rem;
-  border-radius: .2rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
   color: #3e000c;
   display: inline-block;
 }
-
 header .logo p {
   display: inline-block;
   color: #ffeaee;
   font-style: italic;
 }
-
 header .menu-btn {
   cursor: pointer;
   justify-content: center;
@@ -134,20 +131,17 @@ header .menu-btn {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
-
 header .menu-btn_burger {
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background: #ffeaee;
 }
-
 header .open {
   transform: rotate(90deg);
 }
-
 header .navbar {
   display: none;
 }
@@ -160,19 +154,17 @@ header .navbar {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 20;
-  transition: left .2s ease-in-out;
+  transition: left 0.2s ease-in-out;
 }
-
 .overlay .sidebar {
   width: 75vw;
   height: 100vh;
   background-color: #3e000c;
   z-index: 15;
-  padding: .5rem .7rem;
+  padding: 0.5rem 0.7rem;
   color: #ffeaee;
   font-family: sans-serif;
 }
-
 .overlay .sidebar div .menu-icon {
   cursor: pointer;
   justify-content: center;
@@ -183,41 +175,34 @@ header .navbar {
   width: fit-content;
   height: fit-content;
 }
-
 .overlay .sidebar div .menu-icon_burger {
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background: #ffeaee;
 }
-
 .overlay .sidebar nav {
   margin-top: 3rem;
 }
-
 .overlay .sidebar nav a {
   display: block;
   color: #ffeaee;
   margin: 1.5rem auto;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-
 .overlay .sidebar .nav .active {
   color: #ff9900;
 }
-
 .overlay .sidebar .nav a:hover {
   color: #ff9900;
 }
-
 .overlay .sidebar .sidebar_btn {
   margin: 1rem 0rem;
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: 700;
   display: grid;
   place-content: center;
 }
-
 .overlay .sidebar .sidebar_btn .sidebar_button {
   background-color: #ffeaee;
   color: #3e000c;
@@ -241,33 +226,27 @@ header .navbar {
   color: #ffeaee;
   text-align: left;
 }
-
 .main-content .main-header_p {
   text-align: left;
 }
-
 .main-content .main-header_btn {
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
-
 .main-content .main-header_btn .main-header_button {
   background: #ffeaee;
   color: black;
 }
-
 .main-content .main-container1 {
   padding: 2rem 1rem;
 }
-
 .main-content .main-container2_img {
   height: 15rem;
   background-image: url(../image/img2.jpeg);
   background-size: cover;
 }
-
 .main-content .main-container3_btn {
   margin: 1rem 0rem;
-  font-size: .6rem;
+  font-size: 0.6rem;
   display: grid;
   place-content: center;
   transform: scale(1, 1);
@@ -275,70 +254,59 @@ header .navbar {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
-
 .main-content .main-container4_box {
   height: 13rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img11.jpeg);
   background-size: 100% 100%;
   padding: 10.5rem 1rem 0rem;
   color: #ffeaee;
   margin-top: 1.5rem;
 }
-
 .main-content .main-container4 .container4_box2 {
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img8.jpeg);
   background-size: 100% 100%;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
-
 .main-content .main-container4 .container4_box3 {
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img7.jpeg);
   background-size: 100% 100%;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
-
 .main-content .main-container4 .container4_box4 {
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img12.jpeg);
   background-size: 100% 100%;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
-
 .main-content .main-container4 .container4_box5 {
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img18.jpg);
   background-size: 100% 100%;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
-
 .main-content .main-container4 .container4_box6 {
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.3), #272727), url(../image/Bedroom/img13.jpeg);
   background-size: 100% 100%;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
-
 .main-content .main-container5_box {
   background-color: #fff;
   padding: 1rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
-
 .main-content .main-container5_box .main-container5_img {
   background-image: url(../image/img4.jpeg);
   background-size: 100% 100%;
   height: 10rem;
 }
-
 .main-content .main-container5_box .container5_img2 {
   background-image: url(../image/img5.jpeg);
 }
-
 .main-content .main-container5_box .container5_img3 {
   background-image: url(../image/img6.jpeg);
 }
-
 .main-content .main-container5_box .main-container5_btn {
   margin-top: 1.5rem;
-  font-size: .6rem;
+  font-size: 0.6rem;
   display: grid;
   place-content: center;
   transform: scale(1, 1);
@@ -346,16 +314,14 @@ header .navbar {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
-
 .main-content .main-container6_content {
-  padding: .5rem 1rem;
-  border-radius: .5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   border-top: 0.2rem solid #ff9900;
   background-color: #fff;
 }
-
 .main-content .main-container6_content .main-container6_btn {
-  font-size: .6rem;
+  font-size: 0.6rem;
   display: grid;
   place-content: center;
   transform: scale(1, 1);
@@ -375,14 +341,12 @@ header .navbar {
 .about-container {
   padding: 5rem 2rem 0rem;
 }
-
 .about-container .about-container_box {
   background-color: #fff;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   border: 0.2rem solid #ff9900;
   padding: 2rem 1rem;
 }
-
 .about-container .about-container_box .about-rule {
   padding: 0rem 5.5rem;
 }
@@ -397,14 +361,12 @@ header .navbar {
 
 .room-wrapper_content {
   background-color: #fff;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   padding: 3rem 1rem;
 }
-
 .room-wrapper .room-header_btn {
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
-
 .room-wrapper .room-header_btn .room-btn {
   background: #ff9900;
   padding: 10px 20px;
@@ -422,23 +384,19 @@ header .navbar {
 .room-container_box {
   background-color: #fff;
   padding: 1rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
-
 .room-container_box .room-container_img {
   background-image: url(../image/Bedroom/img14.jpeg);
   background-size: cover;
   height: 10rem;
 }
-
 .room-container_box .room-container_img2 {
   background-image: url(../image/Bedroom/img12.jpeg);
 }
-
 .room-container_box .room-container_img3 {
   background-image: url(../image/Bedroom/img1.jpg);
 }
-
 .room-container_box .room-container_img4 {
   background-image: url(../image/Bedroom/img16.jpeg);
 }
@@ -453,15 +411,14 @@ header .navbar {
 
 .services-wrapper_content {
   background-color: #fff;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   padding: 3rem 1rem;
 }
-
 .services-wrapper_btn {
   background-color: #ff9900;
   text-align: center;
-  padding: .5rem 0rem;
-  border-radius: .2rem;
+  padding: 0.5rem 0rem;
+  border-radius: 0.2rem;
 }
 
 .services_image {
@@ -473,14 +430,12 @@ header .navbar {
 .services-container {
   padding: 3rem 2rem 0rem;
 }
-
 .services-container .services-container_box {
   background-color: #fff;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border: 0.2rem solid #ff9900;
   padding: 2rem 1rem;
 }
-
 .services-container .services-container_box .service-rule {
   padding: 0rem 5.5rem;
 }
@@ -495,42 +450,35 @@ header .navbar {
 
 .gastro-wrapper_content {
   background-color: #fff;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   padding: 3rem 1rem;
 }
-
 .gastro-wrapper .gastro-wrapper_btn {
   background-color: #ff9900;
-  padding: .5rem 0rem;
-  border-radius: .2rem;
+  padding: 0.5rem 0rem;
+  border-radius: 0.2rem;
 }
 
 .gastro-img .gastro-image {
   height: 12rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   background-size: 100% 100%;
 }
-
 .gastro-img1 {
   background-image: url(../image/img3.jpeg);
 }
-
 .gastro-img2 {
   background-image: url(../image/img1.jpeg);
 }
-
 .gastro-img3 {
   background-image: url(../image/img5.jpeg);
 }
-
 .gastro-img4 {
   background-image: url(../image/Hotel/img2.jpeg);
 }
-
 .gastro-img5 {
   background-image: url(../image/img4.jpeg);
 }
-
 .gastro-img6 {
   background-image: url(../image/img2.jpeg);
 }
@@ -538,14 +486,12 @@ header .navbar {
 .gastro-container {
   padding: 5rem 2rem 0rem;
 }
-
 .gastro-container .gastro-container_box {
   background-color: #fff;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border: 0.2rem solid #ff9900;
   padding: 2rem 1rem;
 }
-
 .gastro-container .gastro-container_box .gastro-rule {
   padding: 0rem 5.5rem;
 }
@@ -558,44 +504,47 @@ header .navbar {
   color: #ffeaee;
 }
 
-.contact-form .contact-form_item1 {
-  margin-top: .2rem;
+.contact-form_p {
+  font-size: 0.8rem;
 }
-
+.contact-form_item1 {
+  margin-top: 0.2rem;
+}
 .contact-form_item {
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
-
 .contact-form_item #firstName,
 .contact-form_item #lastName,
 .contact-form_item #phone,
 .contact-form_item #email,
 .contact-form_item #message {
   width: 100%;
-  padding: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
   outline: none;
-  border: .1rem solid gray;
+  border: 0.1rem solid gray;
+  background-color: rgb(248, 248, 248);
+  border-radius: 0.3rem;
 }
-
 .contact-form_item #message {
   resize: none;
+  background-color: rgb(248, 248, 248);
+  border-radius: 0.3rem;
 }
-
 .contact-form .contact-btn {
   margin: 1.5rem 0rem 2rem;
 }
-
 .contact-form .contact-btn_item {
   background-color: #ff9900;
   width: fit-content;
   height: fit-content;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   color: #fff;
+  border-radius: 0.3rem;
 }
 
 .contact-container_content {
-  padding: .5rem 1rem;
-  border-radius: .5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   border-top: 0.2rem solid #ff9900;
   background-color: #fff;
 }
@@ -608,21 +557,18 @@ header .navbar {
   background-color: #3e000c;
   margin-top: 3rem;
 }
-
 .footer-container {
   color: #fff;
   padding: 3rem 2rem 0rem;
   text-align: center;
 }
-
 .footer-container .footer-box {
   margin-top: 2rem;
 }
-
 .footer .footer-box5 {
   margin-top: 1.5rem;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   color: #fff;
   text-align: center;
 }
@@ -643,7 +589,7 @@ header .navbar {
     margin-right: 1rem;
   }
   header .navbar a {
-    margin: auto .5rem;
+    margin: auto 0.5rem;
     color: #ffeaee;
   }
   .overlay {
@@ -666,11 +612,11 @@ header .navbar {
     background-color: rgba(255, 255, 255, 0.3);
     width: 16rem;
     height: 18rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     border-top: 0.2rem solid #ff9900;
   }
   .main-container01 .main-container001 .main-container3_btn {
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
   }
   .main-container04,
   .main-container05 {
@@ -681,12 +627,12 @@ header .navbar {
   .main-container004 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: .2rem;
+    grid-gap: 0.2rem;
     height: 30rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .main-container004 .container4_box1 {
-    margin-top: .3rem !important;
+    margin-top: 0.3rem !important;
   }
   .main-container05_p,
   .contact-form_p {
@@ -696,7 +642,7 @@ header .navbar {
   .about-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: .4rem;
+    grid-gap: 0.4rem;
   }
   .main-container6,
   .gastro-wrapper {
@@ -809,7 +755,6 @@ header .navbar {
     text-align: right !important;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .logo {
     margin-left: 3rem;
@@ -847,10 +792,9 @@ header .navbar {
   }
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0rem .5rem;
+    padding: 0rem 0.5rem;
   }
 }
-
 @media screen and (min-width: 1440px) {
   header {
     padding-top: 1rem;

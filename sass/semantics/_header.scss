@@ -2,9 +2,10 @@ header {
     @extend %d-flex;
     justify-content: space-between;
     padding: 3% 1rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    width: 100vw;
     background-color: $primary-color;
     border-bottom: .1rem solid $neutral-color;
     z-index: 10;
